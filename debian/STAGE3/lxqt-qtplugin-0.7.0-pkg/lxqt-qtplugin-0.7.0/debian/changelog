@@ -1,0 +1,5 @@
+lxqt-qtplugin (0.7.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- to_be_fill <to_be_fill@debian>  Sun, 13 Jul 2014 14:27:32 +0800

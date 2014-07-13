@@ -1,0 +1,2 @@
+shlibs:Depends=libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.16.0), liblxqt, libpolkit-agent-1-0 (>= 0.94), libpolkit-gobject-1-0 (>= 0.94), libpolkit-qt-1-1 (>= 0.99.0), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.5.3), libqtxdg, libstdc++6 (>= 4.1.1)
+misc:Depends=

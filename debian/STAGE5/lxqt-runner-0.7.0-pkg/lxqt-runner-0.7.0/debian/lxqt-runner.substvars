@@ -1,0 +1,2 @@
+shlibs:Depends=libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.12.0), liblxqt, libmenu-cache3 (>= 0.3.2), libqt4-dbus (>= 4:4.5.3), libqt4-script (>= 4:4.5.3), libqt4-xml (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.8.0), libqtxdg, libstdc++6 (>= 4.1.1), lxqt-globalkeys
+misc:Depends=

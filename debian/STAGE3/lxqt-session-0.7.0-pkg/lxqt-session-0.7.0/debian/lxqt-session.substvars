@@ -1,0 +1,2 @@
+shlibs:Depends=libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libice6 (>= 1:1.0.0), liblxqt, libqt4-dbus (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.5.3), libqtxdg, libsm6, libstdc++6 (>= 4.1.1), libx11-6, libxext6
+misc:Depends=
