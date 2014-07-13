@@ -1,6 +1,7 @@
 #!/bin/bash -e
 if [ "$#" = "0" ] ; then
     echo $0 lxqt_tarballs_dir
+    exit 2
 fi
 
 # Remember pwd
