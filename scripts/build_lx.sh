@@ -1,8 +1,14 @@
-#!/bin/bash -x
+#!/bin/bash -e
 # Check parameter
 if [ $# = "0" ] ; then
     echo $0 tarball name
-    exit
+    exit 2
+fi
+
+# Check file
+if [ ! -f $1 ] ; then
+    echo "$1 not exist"
+    exit 2
 fi
 
 # tarball name
@@ -23,10 +29,10 @@ done
 echo $FILE
 # Untar
 DIR_NAME=${FILE/.tar.gz/}
-mkdir $DIR_NAME-pkg
+mkdir -p $DIR_NAME-pkg
 cd $DIR_NAME-pkg
 if [ "$NEED_MKDIR" = "YES" ] ; then
-    mkdir $DIR_NAME
+    mkdir -p $DIR_NAME
     cd $DIR_NAME
     tar -zxvf $1
 else
