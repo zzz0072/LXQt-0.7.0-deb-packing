@@ -8,7 +8,7 @@ fi
 FILE=$(basename $1)
 
 # Hardcode package
-NON_MKDIR_TGZ="lxqt-lightdm-greeter-0.7.0.tar.gz lxmenu-data-0.1.2.tar.gz menu-cache-0.5.1.tar.gz"
+NON_MKDIR_TGZ="lxmenu-data-0.1.2.tar.gz menu-cache-0.5.1.tar.gz"
 
 # Check TYPE
 NEED_MKDIR=YES
