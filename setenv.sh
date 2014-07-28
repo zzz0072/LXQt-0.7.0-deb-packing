@@ -1,5 +1,7 @@
 #!/bin/sh
-echo "Please use source $0 to add $(pwd)/scripts to PATH"
+echo "Add $(pwd)/scripts to PATH"
+echo -e "Available scripts:\n$(ls scripts)"
+
 # Hardcode package info:
 # There are dependency. Thus we need to install each of them 
 # after packing
