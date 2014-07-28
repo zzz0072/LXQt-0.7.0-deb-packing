@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo "Add $(pwd)/scripts to PATH"
 echo -e "Available scripts:\n$(ls scripts)"
 
@@ -13,3 +13,15 @@ export LXQT_STAGE5="lxqt-panel-0.7.0.tar.gz lxqt-runner-0.7.0.tar.gz"
 
 export LXQT_DEB_ROOT_DIR=$(pwd)
 export PATH=$PATH:$(pwd)/scripts
+
+function lxqt_stages() {
+    for ((i = 1; i < 6; i++)); do
+        PACKAGES=$(eval echo \$LXQT_STAGE$i) 
+        echo "LXQT_STAGE$i:"
+        echo "===================>"
+        for j in $PACKAGES; do
+            echo $j
+        done
+        echo -e "<===================\n"
+    done
+}
