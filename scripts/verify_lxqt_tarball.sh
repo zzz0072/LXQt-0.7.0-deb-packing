@@ -41,4 +41,4 @@ ORIG_TARBALL=${FILE/.tar.gz/.orig.tar.gz}
 cp -v $1 ../${ORIG_TARBALL/-0./_0.} # dirty hack
 
 # Let's build
-dpkg-buildpackage -us -uc
+dpkg-buildpackage -us -uc -rfakeroot
