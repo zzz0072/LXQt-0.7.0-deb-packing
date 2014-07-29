@@ -12,3 +12,5 @@ Package: compton-conf
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Qt configuration tool for X composite manager Compton
+ Qt configuration tool for X composite manager Compton that used in LXQt
+
