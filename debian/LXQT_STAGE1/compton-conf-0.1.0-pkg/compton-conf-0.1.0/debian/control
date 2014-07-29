@@ -1,15 +1,14 @@
 Source: compton-conf
-Section: unknown
+Section: x11
 Priority: optional
-Maintainer: to_be_fill <to_be_fill@debian>
-Build-Depends: debhelper (>= 9), cmake
+Maintainer: Wen Liao <wen.cf83@gmail.com>
+Build-Depends: debhelper (>= 9), cmake (>= 2.8.3), libqt4-dev (>= 4.6)
 Standards-Version: 3.9.5
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://anonscm.debian.org/collab-maint/compton-conf.git
-#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/compton-conf.git;a=summary
+Homepage: https://github.com/lxde/compton-conf
+Vcs-Git: https://github.com/lxde/compton-conf.git
+Vcs-Browser: https://github.com/lxde/compton-conf
 
 Package: compton-conf
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Qt configuration tool for X composite manager Compton
