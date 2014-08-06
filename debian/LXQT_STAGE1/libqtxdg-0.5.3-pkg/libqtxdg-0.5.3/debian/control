@@ -2,7 +2,7 @@ Source: libqtxdg
 Section: x11
 Priority: optional
 Maintainer: Wen Liao <wen.cf83@gmail.com>
-Build-Depends: debhelper (>= 9), cmake
+Build-Depends: debhelper (>= 9), cmake (>= 2.8.3), libqt4-dev (>= 4.6), libmagic-dev
 Standards-Version: 3.9.5
 Homepage: https://github.com/lxde/libqtxdg
 Vcs-Git: https://github.com/lxde/libqtxdg.git

@@ -6,7 +6,7 @@ Files: *
 Copyright: 2014 LXQt team: http://lxqt.org
                 Razor team: http://razor-qt.org
 
-License: LGPL-2.1
+License: LGPL-2.1+
 
 # If you want to use GPL v2 or later for the /debian/* files use 
 # the following clauses, or change it to suit. Delete these two lines
