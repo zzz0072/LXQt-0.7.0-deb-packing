@@ -13,6 +13,7 @@ export LXQT_STAGE5="lxqt-panel-0.7.0.tar.gz lxqt-runner-0.7.0.tar.gz"
 
 export LXQT_DEB_ROOT_DIR=$(pwd)
 export PATH=$PATH:$(pwd)/scripts
+export LXQT_SRC_DIR=$LXQT_DEB_ROOT_DIR/downloads
 
 function lxqt_stages() {
     for ((i = 1; i < 6; i++)); do
