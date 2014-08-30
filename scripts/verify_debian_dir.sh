@@ -1,13 +1,13 @@
 #!/bin/bash -e
 if [ "$#" != "2"  ] ; then
-    echo $0 lxqt_tarballs_dir lxqt_debian_dir
-    exit 2
+    echo $0 lxqt_debian_dir
+    exit 1
 fi
 
 # Check setenv
 if [ -z "$LXQT_STAGE1" ] ; then
     echo "Please run setenv.sh first"
-    exit 2
+    exit 1
 fi
 
 # Remember pwd
@@ -30,7 +30,7 @@ for ((i = 1; i < 6; i++)); do
         echo "extract $j and apply debian directory"
 
         # extract and copy debian directory to test directory
-        verify_lxqt_tarball.sh $1/$j $2/LXQT_STAGE$i
+        verify_lxqt_tarball.sh $LXQT_SRC_DIR/$j $2/LXQT_STAGE$i
         echo extract done
 
         # install 
@@ -38,6 +38,6 @@ for ((i = 1; i < 6; i++)); do
         PKG_NAME=$(basename $j)
         sudo dpkg -i $(ls ${PKG_NAME/.tar.gz/}-pkg/*.deb)
     done
-    
+
     echo -e "done\n\n\n"
 done
