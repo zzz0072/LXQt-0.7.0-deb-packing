@@ -1,3 +1,6 @@
+
+# This is out-of date. Please visit https://github.com/debian-lxqt
+
 LxQT-0.7.0-deb-packing
 ---
 This is a trail project to pack LXQt 0.7.0 into Debian packages
